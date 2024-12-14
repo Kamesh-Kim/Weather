@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link rel="icon" type="image/png" href="clear.png">
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body>
+    <div><img id="backImage" src="Drizzle.jpg" alt="" class="w-full h-screen object-cover absolute"></div>
+    
+    <div class="container mx-auto sm:mx-auto sm:w-[480px] w-[340px] px-6 sm:px-8 pt-10 pb-16 backdrop-blur-sm bg-black/50 rounded-xl relative top-28">
+        
+            
+        <div class="flex items-center justify-center gap-2">
+            
+            <input id="searchBox" type="text" placeholder="Enter city name" class=" focus:ring-2 focus:ring-yellow-500 outline-none px-6 py-3 rounded w-full border-hidden bg-[#ffffff]">
+            <div id="searchBtn"  class="transition duration-200 ease-in-out  transform hover:-translate-y hover:scale-110 hover:bg-yellow-400 bg-yellow-500 p-4 cursor-pointer rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></div>
+              
+        </div>
+        <h1 id="error" class="text-neutral-400 font-semibold items-center text-center text-xl mt-8">city not found</h1>
+        
+        <div id="container" class="">
+
+        <div class="text-center">
+            <img id="weatherIcon" src="drizzle.png" alt="" class="w-[150px] sm:w-[200px] mx-auto">
+            
+            <h1 id="temp" class="text-5xl sm:text-7xl font-bold text-white"></h1>
+            <h2 id="name" class="text-white font-semibold text-2xl sm:text-4xl"></h2>
+        </div>
+
+        <div class="flex justify-between mt-12  sm:mx-4 items-center">
+            <div class="flex gap-3 ">
+               <img src="humidity.png" alt="" class="w-[50px] sm:w-[60px] object-contain">
+               <div>
+                <h1 id="humidity" class="text-2xl sm:text-4xl text-white"></h1>
+                <h1 class="text-sm sm:text-lg text-white font-semibold">Humidity</h1>
+               </div>
+            </div>
+
+            <div class="border border-neutral-300 border-r-[0.5px] h-[40px] rounded"></div>
+
+            <div class="flex gap-3">
+                <img src="wind.png" alt="" class="w-[40px] sm:w-[50px] object-contain items-center">
+                <div>
+                 <h1 id="wind" class="text-2xl sm:text-4xl text-white"></h1>
+                 <h1 class="text-sm sm:text-lg text-white font-semibold">Wind Speed</h1>
+                </div>
+             </div>
+        </div>
+        
+    </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
